@@ -462,6 +462,10 @@ h1, h2, h3, p{
     background: transparent;
 }
 
+.appointment .form input::placeholder{
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .appointment .form button{
     color: var(--secondary-dark-text-color);
     height: 2vw;
@@ -671,6 +675,22 @@ h1, h2, h3, p{
 
     border: 1px solid var(--secondary-dark-text-color);
     border-radius: 2vw;
+
+    animation: fadeIn 2s;
+    animation-timeline: view();
+    animation-range: entry 10%;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 .reviews .reviews-container .review-card{
@@ -683,6 +703,11 @@ h1, h2, h3, p{
     justify-content: center;
 
 }
+
+/* .reviews .reviews-container .review-card.revealReviews{
+    transform: translateX(0);
+    opacity: 1;
+} */
 
 .reviews h1{
     color: var(--secondary-dark-text-color);
@@ -980,6 +1005,10 @@ footer .scroll-btn-to-up{
         font-size: 7pt;
     }
 
+    button:active{
+        scale: 0.8;
+    }
+
     .header{
         flex-direction: column;
         height: auto;
@@ -1036,13 +1065,24 @@ footer .scroll-btn-to-up{
         font-size: 5pt;
     }
 
+    .images .slide-btn button{
+        height: 10vw;
+        width: 5vw;
+    }
+
     .features{
-        height: auto;
+        margin-top: 5vw;
+        height: 24vw;
         width: auto;
+    }
+
+    .features-heading{
+        margin-bottom: 10vw;
     }
 
     .features .card{
         height: 20vw;
+        gap: 0;
     }
 
     .features .card h2{
@@ -1054,8 +1094,10 @@ footer .scroll-btn-to-up{
     }
 
     .appointment{
+        margin-top: 5vw;
         height: auto;
         width: auto;
+        margin-bottom: 5vw;
     }
 
     .appointment .appointment-heading p{
@@ -1068,11 +1110,17 @@ footer .scroll-btn-to-up{
     }
 
     .appointment .form input{
-        height: 5vw;
+        height: 7vw;
         width: 45vw;
+        border: 1px solid rgba(0, 0, 0, 0.7);
         border-radius: 1vw;
 
+
         font-size: 8pt;
+    }
+
+    input::placeholder{
+        color: rgba(0, 0, 0, 0.3);
     }
 
     .appointment .form button{
@@ -1086,7 +1134,6 @@ footer .scroll-btn-to-up{
     }
 
     .doctor{
-        background: red;
         height: 45vw;
     }
 

@@ -202,11 +202,38 @@ document.addEventListener("DOMContentLoaded", () => {
 sidebarToggleBtn = document.getElementById('sidebar-toggle-btn');
 NavBar = document.querySelector('.navbar')
 
-function toggleSidebar(){
-    sidebarToggleBtn.addEventListener('click', function(){
-        NavBar.classList.toggle('show');
-        sidebarToggleBtn.classList.toggle('rotate')
-    });
-}
+
+sidebarToggleBtn.addEventListener('click', function(){
+    NavBar.classList.toggle('show');
+    sidebarToggleBtn.classList.toggle('rotate');
+});
 
 toggleSidebar()
+
+
+// REVIEW Section Animatio
+// document.addEventListener('DOMContentLoaded', () => {
+//     const reviewContainer = document.querySelector('.reviews-container'); // Added dot
+//     const reviews = document.querySelectorAll('.review-card'); // Added dot
+
+//     const reviewCard_Observer = new IntersectionObserver((entries) => {
+//         entries.forEach(entry => {
+//             if(entry.isIntersecting){
+//                 // Add reveal classes with staggered animation
+//                 reviews.forEach((review, index) => {
+//                     setTimeout(() => {
+//                         review.classList.add('revealReviews');
+//                     }, index * 200);
+//                 });
+//             } else {
+//                 // Remove classes when out of view (optional)
+//                 reviews.forEach((review) => {
+//                     review.classList.remove('revealReviews');
+//                 });
+//             }
+//         });
+//     }, {threshold: 0.3});
+
+//     reviewCard_Observer.observe(reviewContainer);
+// });
+
