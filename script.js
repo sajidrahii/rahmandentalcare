@@ -1,6 +1,6 @@
 // IMAGE SLIDER
 const slides = document.querySelectorAll(
-    ".images .image-container .image-card img"
+    ".images .image-container .image-card img" 
 );
 
 let slideIndex = 0;

@@ -1085,6 +1085,11 @@ footer .scroll-btn-to-up{
         display: none;
     }
 
+    .doctor{
+        background: red;
+        height: 45vw;
+    }
+
     .about.show, 
     .dental-problems.show{
         height: 45vw;
