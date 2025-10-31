@@ -59,3 +59,54 @@
     color: var(--secondary-dark-text-color);
     text-align: center;
 }
+
+@media(max-width: 460px){
+    button{
+        height: 6vw;
+        width: 18vw;
+    }
+
+    .body-holder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200vw;
+        width: 100%;
+    }
+
+    .bar{
+        height: 6vw;
+        width: 80vw;
+        background: #C6ECFF;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2vw;
+    }
+
+    .bar h1{
+        font-size: 12pt;
+        color: black;
+    }
+
+    .doctor img{
+        height: 80vw;
+    }
+
+    .doctor h1, .doctor p{
+        font-family: sans-serif;
+    }
+
+    .doctor h1{
+        font-weight: 500;
+        color: var(--header-bg-color);
+        font-size: 20pt;
+    }
+
+    .doctor p{
+        color: var(--secondary-dark-text-color);
+        text-align: center;
+        font-size: 12pt;
+    }
+}

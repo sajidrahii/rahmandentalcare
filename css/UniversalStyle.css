@@ -33,6 +33,8 @@ button{
     font-family: sans-serif;
     transition: 0.3s ease-in-out;
     font-size: 0.6vw;
+
+    background: var(--section-bg-color-light);
 }
 
 button:hover{
@@ -275,4 +277,91 @@ footer .scroll-btn-to-up{
     font-size: 2vw;
     background: transparent;
     color: var(--white-text-color);
+}
+
+@media(max-width: 650px){
+    h1{
+        font-size: 12pt;
+    }
+
+    h2{
+        font-size: 8pt;
+    }
+
+    p{
+        font-size: 8pt;
+    }
+
+    a{
+        font-size: 6pt;
+    }
+
+    button{
+        height: 5vw;
+        width: 15vw;
+
+        font-size: 7pt;
+    }
+
+    button:active{
+        scale: 0.8;
+    }
+
+    .header{
+        flex-direction: column;
+        height: auto;
+        gap: 1vw;
+    }
+
+    .navbar{
+        background: var(--section-bg-color-purple);
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        height: 120vw;
+        width: 50vw;
+        justify-content: center;
+        align-items: center;
+        transition: 0.75s ease-out;
+    }
+
+    .navbar .nav-left img{
+        margin-top: 10vw;
+        height: 6vw;
+    }
+
+    .navbar .nav-right{
+        flex-direction: column;
+    }
+
+    .navbar .nav-right a{
+        font-size: 12pt;
+        text-align: center;
+        color: var(--white-text-color);
+    }
+
+    /* #sidebar-active:checked ~ .navbar{
+        right: 0;
+    } */
+    .navbar.show{
+        right: 0;
+    }
+
+    .rotate{
+        transform: rotate(90deg);
+    }
+
+    .footer{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        height: 25vw;
+    }
+
+    footer h1, footer h2, footer p{
+        font-size: 6pt;
+        text-align: center;
+    }
 }
