@@ -439,7 +439,7 @@ h1, h2, h3, p{
     font-family: sans-serif;
 }
 
-.appointment .form{
+.appointment .form-container{
     margin: 2vw;
     display: grid;
     grid-column: 1fr 1fr;
@@ -453,7 +453,7 @@ h1, h2, h3, p{
 
 }
 
-.appointment .form input{
+.appointment .form-container input{
     padding-left: 1vw;
     border: 0.1px solid var(--secondary-dark-text-color);
     height: 2.5vw;
@@ -466,11 +466,11 @@ h1, h2, h3, p{
     background: transparent;
 }
 
-.appointment .form input::placeholder{
+.appointment .form-container input::placeholder{
     color: rgba(0, 0, 0, 0.3);
 }
 
-.appointment .form button{
+.appointment .form-container button{
     color: var(--secondary-dark-text-color);
     height: 2vw;
     border: 1px solid hsl(0, 0%, 0%, 0.5);
@@ -479,7 +479,7 @@ h1, h2, h3, p{
     transition: 0.3s ease-in-out;
 }
 
-.appointment .form button:hover{
+.appointment .form-container button:hover{
     border: 3px solid var(--header-bg-color);
 }
 
@@ -1108,12 +1108,12 @@ footer .scroll-btn-to-up{
         text-align: center;
     }
 
-    .appointment .form{
+    .appointment .form-container{
         display: flex;
         flex-direction: column;
     }
 
-    .appointment .form input{
+    .appointment .form-container input{
         height: 7vw;
         width: 45vw;
         border: 1px solid rgba(0, 0, 0, 0.7);
@@ -1127,7 +1127,7 @@ footer .scroll-btn-to-up{
         color: rgba(0, 0, 0, 0.3);
     }
 
-    .appointment .form button{
+    .appointment .form-container button{
         height: 5vw;
         width: 12vw;
 

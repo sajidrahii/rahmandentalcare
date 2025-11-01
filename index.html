@@ -7,6 +7,21 @@
     <link rel="shortcut icon" href="assets/logo.jpeg" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+    <script src="Backend/Email.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "X81sWyq-DkrXoTuKf",
+        });
+    })();
+    </script>
+
 </head>
 <body>
     <header class="home" id="home">
@@ -63,9 +78,9 @@
 
         <div class="image-container">
             <div class="image-card">
-                <img src="assets/images/two.jpg" alt="">
-                <img src="assets/images/three.jpg" alt="">
-                <img src="assets/images/one.jpg" alt="">
+                <img src="assets/images/two.jpg" alt="image">
+                <img src="assets/images/three.jpg" alt="image">
+                <img src="assets/images/one.jpg" alt="image">
             </div>
 
             <div class="info-card">
@@ -128,15 +143,14 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt minima molestias illo voluptatibus vitae eaque<br>, esse quaerat magnam earum, delectus rem tempora expedita, fuga optio perspiciatis quo reiciendis error? Eos!</p>
         </div>
 
-        <div class="form">
-            <input type="text" style="grid-area: input-1;"  placeholder="Your Name *" required>
-            <input type="text" style="grid-area: input-2;"  placeholder="Your Address">
-            <input type="text" style="grid-area: input-3;"  placeholder="Mobile Number *" required>
-            <input type="date" style="grid-area: input-4;"  placeholder="Appointment Date">
-            <input type="text" style="grid-area: input-5;"  placeholder="Subject">
-            <input type="text" style="grid-area: input-6;"  placeholder="Your Message">
-
-            <button style="grid-area: send-btn;">Send</button>
+        <div class="form-container">
+            <input type="text" id="name" name="name" style="grid-area: input-1;"  placeholder="Your Name *" required>
+            <input type="text" id="address" name="address" style="grid-area: input-2;"  placeholder="Your Address">
+            <input type="text" id="mobile" name="mobile" style="grid-area: input-3;"  placeholder="Mobile Number *" required>
+            <input type="date" id="date" name="date" style="grid-area: input-4;"  placeholder="Appointment Date">
+            <input type="text" id="subject" name="subject" style="grid-area: input-5;"  placeholder="Subject">
+            <input type="text" id="message" name="message" style="grid-area: input-6;"  placeholder="Your Message">
+            <button type="submit" style="grid-area: send-btn;" onclick="sendEmail()" id="action-send-btn">Send</button>
         </div>
 
         <div class="family-img-holder">
@@ -300,6 +314,5 @@
         <a href="index.html#home"><button class="scroll-btn-to-up" style="grid-area: c-info-area-4;">&#8686</button></a>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
