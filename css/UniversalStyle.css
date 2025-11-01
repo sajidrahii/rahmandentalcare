@@ -11,7 +11,33 @@
 
     --section-bg-color-light: #46BDDF;
     --section-bg-color-purple: #8b46df;
+
+    --btn-color: hsl(200, 65%, 48%);
 } 
+
+button{
+    height: 60px;
+    width: 150px;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--btn-color);
+    color: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+    font-family: sans-serif;
+    transition: 0.3s ease-in-out;
+    font-size: 10pt;
+    margin: 0.2vw;
+}
+
+button:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+button:active{
+    scale: 0.9;
+}
 
 *{
     margin: 0;
@@ -21,25 +47,6 @@
 
 html{
     scroll-behavior: smooth;
-}
-
-/* BUTTONS */
-button{
-    height: 2.5vw;
-    width: 6vw;
-    margin: 0.2vw;
-    border: none;
-    border-radius: 10px;
-    font-family: sans-serif;
-    transition: 0.3s ease-in-out;
-    font-size: 0.6vw;
-
-    background: var(--section-bg-color-light);
-}
-
-button:hover{
-    scale: 1.1;
-    cursor: pointer;
 }
 
 h1{
@@ -65,6 +72,10 @@ h1, h2, h3, p{
 
 .active-page{
     background-color: var(--section-bg-color-light);
+}
+
+#home{
+    scroll-margin-top: 10vw;
 }
 
 .header{

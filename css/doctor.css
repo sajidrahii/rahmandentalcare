@@ -4,6 +4,7 @@
     --secondary-white-text-color: hsl(0 0 80%);
     --dark-text-color: hsl(0 0 5%);
     --secondary-dark-text-color: #636369;
+    --text-hover-color: hsl(200, 65%, 48%);
 
     --highlight-text-color: #C6ECFF;
 } 
@@ -12,6 +13,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+#home{
+    scroll-margin-top: 10vw;
 }
 
 .doctor{

@@ -10,7 +10,7 @@ let infoBoxHeading = document.querySelector(".js-text-change");
 let headingOne = "Dental Service - That you can trust!";
 let headingTwo = "Complete Dental Solution";
 
-document.addEventListener("DOMContentLoaded", initializeSlider); //Display the image
+document.addEventListener("DOMContentLoaded", initializeSlider); //Display the image 
 
 function initializeSlider() {
     if (slides.length > 0) {
